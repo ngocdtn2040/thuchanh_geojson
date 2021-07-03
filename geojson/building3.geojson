@@ -1,0 +1,200 @@
+{
+    "type": "FeatureCollection",
+    "generator": "overpass-ide",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp": "2020-08-27T10:45:03Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/557002375",
+          "building": "apartments",
+          "name": "Scenic Valley",
+          "building:levels": "14"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.716891,
+                10.7321772
+              ],
+              [
+                106.7156664,
+                10.731454
+              ],
+              [
+                106.7164309,
+                10.7301674
+              ],
+              [
+                106.7176677,
+                10.7308851
+              ],
+              [
+                106.716891,
+                10.7321772
+              ]
+            ]
+          ]
+        },
+        "id": "way/557002375"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/780088730",
+          "addr:city": "Hồ Chí Minh",
+          "addr:district": "Quận 7",
+          "addr:province": "Hồ Chí Minh",
+          "addr:street": "Tôn Dật Tiên",
+          "addr:subdistrict": "Tân Phú",
+          "building": "apartments",
+          "name": "Scenic Valley 2",
+          "building:levels": "14"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7174801,
+                10.7314704
+              ],
+              [
+                106.7177698,
+                10.7309594
+              ],
+              [
+                106.7188956,
+                10.7316192
+              ],
+              [
+                106.7185664,
+                10.7321367
+              ],
+              [
+                106.7174801,
+                10.7314704
+              ]
+            ]
+          ]
+        },
+        "id": "way/780088730"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/223360206",
+          "amenity": "public_building",
+          "building": "yes",
+          "name": "UBND Quận 7",
+          "building:levels": "14"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7260142,
+                10.732539
+              ],
+              [
+                106.7264916,
+                10.7317484
+              ],
+              [
+                106.7272804,
+                10.7322124
+              ],
+              [
+                106.7267974,
+                10.7329711
+              ],
+              [
+                106.7260142,
+                10.732539
+              ]
+            ]
+          ]
+        },
+        "id": "way/223360206"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/296377014",
+          "building": "apartments",
+          "name": "Star Hills Residence",
+          "building:levels": "14"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7258478,
+                10.7294776
+              ],
+              [
+                106.7262742,
+                10.7287941
+              ],
+              [
+                106.7270751,
+                10.7292764
+              ],
+              [
+                106.7266487,
+                10.7299599
+              ],
+              [
+                106.7258478,
+                10.7294776
+              ]
+            ]
+          ]
+        },
+        "id": "way/296377014"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/307665159",
+          "building": "apartments",
+          "name": "Star Hills Residence",
+          "building:levels": "14"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7248191,
+                10.7288606
+              ],
+              [
+                106.7252608,
+                10.7281648
+              ],
+              [
+                106.726073,
+                10.7286625
+              ],
+              [
+                106.7256312,
+                10.7293583
+              ],
+              [
+                106.7248191,
+                10.7288606
+              ]
+            ]
+          ]
+        },
+        "id": "way/307665159"
+      }
+      
+    ]
+  }

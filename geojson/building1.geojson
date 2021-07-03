@@ -1,0 +1,260 @@
+{
+    "type": "FeatureCollection",
+    "generator": "overpass-ide",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp": "2020-08-27T10:45:03Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/289924758",
+          "building": "commercial",
+          "building:levels": "5",
+          "height": 15,
+          "name": "Lawrence S. Ting Building"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7205899,
+                10.7302833
+              ],
+              [
+                106.7203616,
+                10.7306406
+              ],
+              [
+                106.7200128,
+                10.7304539
+              ],
+              [
+                106.7200546,
+                10.7303876
+              ],
+              [
+                106.720013,
+                10.730365
+              ],
+              [
+                106.7200723,
+                10.7302598
+              ],
+              [
+                106.7201192,
+                10.7302868
+              ],
+              [
+                106.7201334,
+                10.7302589
+              ],
+              [
+                106.7201768,
+                10.7302846
+              ],
+              [
+                106.7202156,
+                10.7302233
+              ],
+              [
+                106.7202749,
+                10.7302607
+              ],
+              [
+                106.7203006,
+                10.7302195
+              ],
+              [
+                106.7203554,
+                10.7302525
+              ],
+              [
+                106.7204116,
+                10.730167
+              ],
+              [
+                106.7205899,
+                10.7302833
+              ]
+            ]
+          ]
+        },
+        "id": "way/289924758"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/225644941",
+          "amenity": "restaurant",
+          "building": "yes",
+          "building:levels": "5",
+          "height": 15,
+          "name": "The Adora"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7196404,
+                10.7301947
+              ],
+              [
+                106.7199806,
+                10.7296431
+              ],
+              [
+                106.7201713,
+                10.7297567
+              ],
+              [
+                106.7198311,
+                10.7303083
+              ],
+              [
+                106.7196404,
+                10.7301947
+              ]
+            ]
+          ]
+        },
+        "id": "way/225644941"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/188114201",
+          "amenity": "restaurant",
+          "building": "yes",
+          "building:levels": "5",
+          "height": 15,
+          "cuisine": "chinese",
+          "name": "Ming"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7203345,
+                10.7296875
+              ],
+              [
+                106.7199899,
+                10.7294779
+              ],
+              [
+                106.7201603,
+                10.7292075
+              ],
+              [
+                106.7205049,
+                10.7294172
+              ],
+              [
+                106.7203345,
+                10.7296875
+              ]
+            ]
+          ]
+        },
+        "id": "way/188114201"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/189082649",
+          "addr:city": "Ho Chi Minh City",
+          "addr:district": "Quận 7",
+          "addr:housenumber": "152",
+          "addr:street": "Nguyễn Lương Bằng",
+          "building": "yes",
+          "building:levels": "5",
+          "height": 15,
+          "name": "Broadway D"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7210592,
+                10.7295954
+              ],
+              [
+                106.7208128,
+                10.7294488
+              ],
+              [
+                106.7213745,
+                10.7285375
+              ],
+              [
+                106.7216121,
+                10.7286758
+              ],
+              [
+                106.7210592,
+                10.7295954
+              ]
+            ]
+          ]
+        },
+        "id": "way/189082649"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/289924752",
+          "building": "yes",
+          "building:levels": "5",
+          "height": 15
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                106.7203418,
+                10.7290585
+              ],
+              [
+                106.7202801,
+                10.7290217
+              ],
+              [
+                106.720264,
+                10.7289531
+              ],
+              [
+                106.7205269,
+                10.7285209
+              ],
+              [
+                106.7205564,
+                10.7284999
+              ],
+              [
+                106.7205832,
+                10.7285078
+              ],
+              [
+                106.7206342,
+                10.7285447
+              ],
+              [
+                106.7206422,
+                10.7285736
+              ],
+              [
+                106.7203418,
+                10.7290585
+              ]
+            ]
+          ]
+        },
+        "id": "way/289924752"
+      }
+    ]
+  }

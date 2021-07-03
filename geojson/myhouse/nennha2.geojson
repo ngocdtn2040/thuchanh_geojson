@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-08-27T10:45:03Z",
+  "features": [
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/2472612425",
+        "building:levels": "1",
+        "height": 0.5,
+        "name": "Nen Nha tang 2",
+        "dien tich": "10x10"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+           [106.72168928688806, 10.726099625850825,100],
+           [106.72146976717136, 10.725945642296546,100],
+           [ 106.72103432403638, 10.726635519820197,100],
+           [106.72124893970552, 10.72679085656616,100]    
+           
+          ]
+        ]
+      },
+      "id": "way/247261825"
+    }
+  ]
+}

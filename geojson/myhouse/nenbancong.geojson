@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-08-27T10:45:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247261925",
+        "height": 1,
+        "name": "vien tang 2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+              [106.80116785501725, 10.88961971901729,107],
+            [106.80217851142287, 10.889609183375685,107],
+           [ 106.80217939396182, 10.88932473274907,107],
+           [106.80116015453649, 10.889335268400739,107]
+          
+           
+           
+           
+          ]
+        ]
+      },
+      "id": "way/247261825"
+    }
+  ]
+}

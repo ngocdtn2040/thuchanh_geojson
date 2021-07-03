@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>GeoJSONLayer | Sample | ArcGIS API for JavaScript 4.16</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.16/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.16/"></script>
+
+    <script>
+     
+      require([
+        "esri/Map",
+        "esri/views/SceneView",
+        "esri/layers/GeoJSONLayer",
+        "esri/layers/SceneLayer",
+        "esri/widgets/Sketch",
+        "esri/views/MapView",
+        "esri/layers/GraphicsLayer",
+        "esri/Graphic"
+      ], function (Map, SceneView, GeoJSONLayer, SceneLayer, GraphicsLayer, Graphic) {
+        const geojsonLayer = new GeoJSONLayer({
+          url: "geojson/q7.geojson"
+        }), geojsonLayer2 = new GeoJSONLayer({
+          url: "geojson/sample_lod.geojson"
+        }),
+        geojsonLayer3 = new GeoJSONLayer({
+          url: "geojson/building1.geojson"
+        }), geojsonLayer4 = new GeoJSONLayer({
+          url: "geojson/building2.geojson"
+        }), geojsonLayer5 = new GeoJSONLayer({
+          url: "geojson/building3.geojson"
+        });
+
+        geojsonLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 3,// 7 tầng
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid", // autocasts as new SolidEdges3D()
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 6,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid",
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 9,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid",
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 12,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 15,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 18,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid",
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 21,
+                material: {
+                  color: "#aded9f"
+                },  
+                edges: {
+                  type: "solid",
+                  color: [50, 50, 50, 1]
+                 }, 
+              }
+            ]
+          }
+        };
+        
+        geojsonLayer2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+            {
+                type: "extrude",
+                size: 3, // 4 tầng
+                material: {
+                  color: "#FF5900"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 },
+              },
+              {
+                type: "extrude",
+                size: 6,
+                material: {
+                  color: "#FF5900"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 9,
+                material: {
+                  color: "#FF5900"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 12,
+                material: {
+                  color: "#FF5900"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+            ]
+          }
+        };
+        
+        geojsonLayer3.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+            {
+                type: "extrude",
+                size: 3, // 5 tầng
+                material: {
+                  color: "#4491BB"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 6,
+                material: {
+                  color: "#4491BB"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 9,
+                material: {
+                  color: "#4491BB"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 },
+              },
+              {
+                type: "extrude",
+                size: 12,
+                material: {
+                  color: "#4491BB"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 15,
+                material: {
+                  color: "#4491BB"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              }
+            ]
+          }
+        };
+        
+        geojsonLayer4.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+            {
+                type: "extrude",
+                size: 3, //8 tầng
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 6,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 9,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 12,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 },
+              },
+              {
+                type: "extrude",
+                size: 15,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 18,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 21,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 24,
+                material: {
+                  color: "#3CFF00"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+            ]
+          }
+        };
+        
+        geojsonLayer5.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 3, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 6, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 9, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 12, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 15, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 18, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 21, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 24, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 27, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 30, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 33, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 36, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 39, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              },
+              {
+                type: "extrude",
+                size: 42, // 14 tầng
+                material: {
+                  color: "#C300FF"
+                },  
+                edges: {
+                  type: "solid", 
+                  color: [50, 50, 50, 1]
+                 }, 
+              }
+            ]
+          }
+        };
+
+        const map = new Map({
+          basemap: "topo-vector",
+          ground: "world-elevation",
+          layers: [geojsonLayer, geojsonLayer2, geojsonLayer3, geojsonLayer4, geojsonLayer5] //end layers
+        });
+
+        const view = new SceneView({
+          container: "viewDiv",
+          map: map,
+          camera: {
+            position: [106.72194974965177, 10.710733012614137, 730.7279187720269],
+            heading: 0,
+            tilt: 75
+          }
+        });
+
+        view.popup.defaultPopupTemplateEnabled = true;
+        view.popup.autoOpenEnabled = false;  // Disable the default popup behavior
+
+        view.on("click", function(event) { // Listen for the click event
+          view.hitTest(event).then(function (hitTestResults){ // Search for features where the user clicked
+          if(hitTestResults.results) {
+            view.popup.open({ // open a popup to show some of the results
+            location: event.mapPoint,
+            title: "Lat/Long Results",
+            content: "longitude, latitude: " + event.mapPoint.longitude+ ", "+ event.mapPoint.latitude
+            });
+          }
+          })
+        });
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>

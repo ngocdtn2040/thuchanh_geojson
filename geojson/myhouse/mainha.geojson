@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-08-27T10:45:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247561925",
+        "height": 10,
+        "name": "Mai nha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.8016877450822, 10.889918152797005,230],
+            [106.8011212625057, 10.89025107857037,180],
+            [ 106.80225208192425, 10.890242650042834,180]
+        
+          ]
+        ]
+      },
+      "id": "way/249261925"
+    },
+    {
+       "type": "Feature",
+      "properties": {
+        "@id": "way/247561925",
+        "height": 10,
+        "name": "Mai nha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.8016877450822, 10.889918152797005,230],
+            [ 106.80111267956781, 10.889591547900334,180],
+            [106.8011212625057, 10.89025107857037,180]
+        
+          ]
+        ]
+      },
+      "id": "way/249261925"
+    },
+    {
+       "type": "Feature",
+      "properties": {
+        "@id": "way/247561925",
+        "height": 10,
+        "name": "Mai nha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.8016877450822, 10.889918152797005,230],
+            [106.80224993602607, 10.88958522669164,180],
+            [ 106.80111267956781, 10.889591547900334,180]
+            
+        
+          ]
+        ]
+      },
+      "id": "way/249261925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247561925",
+        "height": 10,
+        "name": "Mai nha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.8016877450822, 10.889918152797005,230],
+            [106.80225208192425, 10.890242650042834,180],
+            [106.80224993602607, 10.88958522669164,180]
+           
+            
+        
+          ]
+        ]
+      },
+      "id": "way/249261925"
+    }
+  ]
+}

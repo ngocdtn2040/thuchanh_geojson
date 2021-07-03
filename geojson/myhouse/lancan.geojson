@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-08-27T10:45:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247261925",
+        "height": 1,
+        "name": "Lan can tang 2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+              
+            [106.80217851142287, 10.889609183375685,107],
+           [ 106.80217939396182, 10.88932473274907,107],
+           [106.80221158047001, 10.889320518552603,107],
+          [106.80221587210268, 10.889611302389962,107]
+           
+           
+           
+          ]
+        ]
+      },
+      "id": "way/247261825"
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247261925",
+        "height": 1,
+        "name": "Lan can tang 2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+              
+           [106.80116785501725, 10.88961971901729,107],
+           [106.80116015453649, 10.889335268400739,107],
+           [106.80113440539544, 10.889328947025854,107],
+           [106.80112582229387, 10.889619730854996,107]
+          
+           
+           
+           
+          ]
+        ]
+      },
+      "id": "way/247261825"
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247261925",
+        "height": 1,
+        "name": "Lan can tang 2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+              
+          
+           [ 106.80217939396182, 10.88932473274907,107],
+           [106.80116015453649, 10.889335268400739,107],
+            [106.80116230027096, 10.889373196807977,107],
+            [106.8021772482274, 10.889362661157644,107]
+           
+           
+           
+          ]
+        ]
+      },
+      "id": "way/247261825"
+    }
+  ]
+}
